@@ -353,7 +353,7 @@ h1, h2, h3 { font-family: 'Fraunces', Georgia, serif; margin: 0; }
 .brand-mark {
   width: 104px; height: 104px; border-radius: 50%; display: inline-block; flex-shrink: 0;
   object-fit: contain; box-sizing: border-box; padding: 8px;
-  background: var(--ink); border: 2px solid var(--thread);
+  background: #FFFFFF; border: 1px solid var(--line); box-shadow: 0 1px 4px rgba(43,38,32,0.08);
 }
 .nav-right { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; min-width: 0; max-width: 100%; }
 .nav-switch {
@@ -383,10 +383,9 @@ h1, h2, h3 { font-family: 'Fraunces', Georgia, serif; margin: 0; }
   padding: 8px 14px; border-radius: 10px; font-size: 0.85rem; font-weight: 500; color: var(--ink); cursor: pointer;
 }
 .lang-menu {
-  position: absolute; top: calc(100% + 6px); right: 0; background: white; border: 1px solid var(--line);
-  border-radius: 10px; padding: 6px; box-shadow: 0 8px 24px rgba(43,38,32,0.12); z-index: 20; min-width: 150px;
+  position: absolute; top: calc(100% + 6px); left: 50%; transform: translateX(-50%); background: white; border: 1px solid var(--line);
+  border-radius: 10px; padding: 6px; box-shadow: 0 8px 24px rgba(43,38,32,0.12); z-index: 20; min-width: 150px; max-width: calc(100vw - 32px);
 }
-.app-shell[dir="rtl"] .lang-menu { right: auto; left: 0; }
 .lang-menu button {
   display: flex; align-items: center; justify-content: space-between; gap: 8px; width: 100%; text-align: left;
   border: none; background: transparent; padding: 9px 12px; border-radius: 7px; font-size: 0.88rem; cursor: pointer; color: var(--ink);
